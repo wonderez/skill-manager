@@ -1,0 +1,58 @@
+﻿[
+  {
+    "name": "gstack",
+    "description": "Garry Tan's virtual engineering team for Claude Code. Deeply bound to Claude Code with slash commands and hooks.",
+    "type": "collection",
+    "platforms": ["claude-code"],
+    "installCommands": {
+      "claude-code": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup"
+    },
+    "githubUrl": "https://github.com/garrytan/gstack",
+    "tags": ["claude-only", "team-workflow", "slash-commands"]
+  },
+  {
+    "name": "superpowers",
+    "description": "Cross-platform core skills library. Auto-detects your AI tool and installs appropriate adapters.",
+    "type": "collection",
+    "platforms": ["claude-code", "cursor", "codex", "gemini", "antigravity", "windsurf", "cline", "roo-code", "trae", "trae-cn", "opencode", "goose", "aider", "openclaw", "qoder", "amp"],
+    "installCommands": {
+      "claude-code": "npx superpowers-zh",
+      "cursor": "npx superpowers-zh --tool cursor",
+      "codex": "npx superpowers-zh --tool codex",
+      "gemini": "npx superpowers-zh --tool gemini",
+      "antigravity": "npx superpowers-zh --tool gemini",
+      "windsurf": "npx superpowers-zh --tool windsurf",
+      "cline": "npx superpowers-zh --tool cline",
+      "roo-code": "npx superpowers-zh --tool roo",
+      "trae": "npx superpowers-zh --tool trae",
+      "trae-cn": "npx superpowers-zh --tool trae",
+      "opencode": "npx superpowers-zh --tool opencode",
+      "goose": "npx superpowers-zh --tool goose",
+      "aider": "npx superpowers-zh --tool aider",
+      "openclaw": "npx superpowers-zh --tool openclaw",
+      "qoder": "npx superpowers-zh --tool qoder",
+      "amp": "npx superpowers-zh --tool amp"
+    },
+    "githubUrl": "https://github.com/obra/superpowers",
+    "tags": ["cross-platform", "methodology", "tdd"]
+  },
+  {
+    "name": "skills-registry",
+    "description": "Vercel Skills CLI — npm-like package manager for AI agent skills.",
+    "type": "single",
+    "platforms": ["claude-code", "cursor", "codex", "windsurf", "cline", "roo-code", "trae", "trae-cn", "opencode"],
+    "installCommands": {
+      "claude-code": "npx skills add",
+      "cursor": "npx skills add",
+      "codex": "npx skills add",
+      "windsurf": "npx skills add",
+      "cline": "npx skills add",
+      "roo-code": "npx skills add",
+      "trae": "npx skills add",
+      "trae-cn": "npx skills add",
+      "opencode": "npx skills add"
+    },
+    "githubUrl": "https://skills.sh",
+    "tags": ["registry", "package-manager"]
+  }
+]
